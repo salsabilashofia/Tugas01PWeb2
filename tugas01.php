@@ -1,18 +1,20 @@
 <form action="" method="POST">
-   Masukkan Nilai : <input type="text" name="nilai">
+   Masukkan Nilai : 
+   <input type="number" name="nilai">
     <?php
       if ($_POST)
       {
         $nilai = $_POST['nilai'];
         if ($nilai >= 80) {
-          $grade = "A"; }
+          $huruf = "A"; }
         elseif ($nilai >= 70) {
-          $grade = "B"; }
+          $huruf = "B"; }
         elseif ($nilai >= 60) {
-          $grade = "C"; }
+          $huruf = "C"; }
         else {
-          $grade = "D"; }
-        echo "Huruf : " . $grade;
+          $huruf = "D"; }
+        echo "Huruf : " ;
+        echo $huruf;
       }
     ?>
 </form>
